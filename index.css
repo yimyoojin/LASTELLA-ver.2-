@@ -1,0 +1,168 @@
+@charset "utf-8";
+@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, button, abbr, acronym, address, code, del, 
+dfn, em, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset,
+ form, label, legend, table, caption, tbody, tfoot, thead, tr, th, 
+td, hr{margin:0;padding:0;font-size:100%;box-sizing: border-box;}
+
+body{height:100%;min-height:100%; }
+
+header, footer, section, article, aside, nav, hgroup,
+ details, menu, figure, figcaption {display:block;box-sizing: border-box;}
+
+html,body{overflow:hidden;height:100%;}
+
+ul, li {list-style:none}
+
+a:link, a:visited {text-decoration:none}
+
+form, fieldset, iframe {display:block;border:0}
+
+caption, legend {overflow:hidden;visibility:hidden;position:absolute;width:0;height:0;padding:0;margin:0;font-size:0;text-indent:-100%;white-space:nowrap;z-index:-1}
+
+button{border: 0;}
+
+/* #wrap  */
+
+#wrap{
+    width: 100%; height: 100%; 
+}
+
+/* header */
+
+#header{
+    height: 10%;
+}
+
+#header > h1{
+   font-size: 0; height: 100%; padding: 2% 2% 0 2%;
+}
+
+#header > .logo_box{
+    height: 100%; cursor: pointer;
+} 
+
+#header > .logo_box img{
+    width: 150px;
+}
+
+/* container_wrap */
+
+#container_wrap{
+    width: 100%; height: 85%;
+}
+
+/* menu_bar */
+
+#menu_bar{
+    width: 15%; height: 100%;
+}
+
+#menu_bar header{
+    width: 180px; height: 450px; position: fixed;  
+    z-index: 11;
+}
+
+#menu_bar header nav{
+    width: 100%; height: 100%;
+}
+
+#menu_bar header nav ul{
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#menu_bar header nav ul li{
+    margin: 0px 0px 10px 30px; padding-left: 15px;
+    position: relative;
+}
+
+#menu_bar header nav ul li a{
+    font-size: 16px; color: black;
+    font-weight: 600; line-height: 30px;
+}
+
+#menu_bar header nav ul li:after{
+    content: ""; display: inline-block; width: 5px; height: 5px;
+    border-radius: 50%; background: black;
+    position: absolute; left: 0px; top: 13px;
+}           
+
+#menu_bar header nav ul li:hover a,#menu_bar header nav ul li.on a{
+    color: green;
+}
+
+#menu_bar header nav ul li:hover:after,#menu_bar header nav ul li.on:after{
+    background: green;
+}
+
+/* container */
+
+#container{
+    width: 100%; height: 100%;
+}  
+
+  .gallery_list{
+    display: block;
+  }
+
+  .gallery_list li{
+    width: auto;
+  }
+
+  .gallery_list li:nth-child(2){
+    margin-top: 30px;
+    margin-top: 1.875rem;
+    margin-left: 0;
+  }
+
+/* footer */
+
+#footer_wrap{
+    height: 100%;
+    background: rgba(47, 47, 49, 0.5);
+}
+
+
+footer{
+    width: 100%; position: fixed;  bottom: 5px; 
+    display: flex;  justify-content: center;
+     font-size: 12px; color: black; z-index: 12;
+}
+
+footer address{
+    padding: 0px 0px 5px 0px;
+}
+
+
+
+/* 불릿 */
+.bullet_list{
+    margin-top: 20px;
+}
+
+.bullet_list li{
+    margin-bottom: 5px; padding-left: 10px; font-size: 12px; color: #3c4147;
+    position: relative;
+}
+
+.bullet_list li:after{
+    content: ""; display: block; width: 3px; height: 3px;
+    border-radius: 50%; background: #3c4147; position: absolute; left: 0; top: 8px;
+}
+
+.commbtn{
+    width: 150px; display: inline-block; height: 35px; margin-top: 20px; font-size: 15px;
+    line-height: 35px; border-radius: 5px; text-align: center;
+}
+
+.commbtn.pink{
+    background: #f92d68; color: #fff;
+}
+
+.commbtn.gray{
+    background: #3c4147; color: #fff;
+}
